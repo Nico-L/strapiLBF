@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_machines_abonnements",
+  "info": {
+    "name": "tarifs",
+    "icon": "euro-sign"
+  },
+  "options": {},
+  "attributes": {
+    "duree": {
+      "type": "string"
+    },
+    "tarif": {
+      "type": "string"
+    }
+  }
+}

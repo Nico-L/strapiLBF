@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ateliers",
+      "handler": "atelier.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ateliers/count",
+      "handler": "atelier.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ateliers/:id",
+      "handler": "atelier.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ateliers",
+      "handler": "atelier.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ateliers/:id",
+      "handler": "atelier.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ateliers/:id",
+      "handler": "atelier.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

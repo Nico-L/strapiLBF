@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "espaces",
+  "info": {
+    "name": "espaces"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "espace": {
+      "type": "string"
+    },
+    "ateliers": {
+      "via": "espace",
+      "collection": "atelier"
+    }
+  }
+}

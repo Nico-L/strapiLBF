@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations",
+  "info": {
+    "name": "reservations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "heureDebut": {
+      "type": "datetime"
+    },
+    "heureFin": {
+      "type": "datetime"
+    },
+    "machine": {
+      "via": "reservations",
+      "model": "machines"
+    }
+  }
+}

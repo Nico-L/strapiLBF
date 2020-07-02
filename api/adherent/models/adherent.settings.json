@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "adherents",
+  "info": {
+    "name": "adhérents"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "adhesion": {
+      "type": "date"
+    },
+    "finAbonnementMachines": {
+      "type": "date"
+    }
+  }
+}

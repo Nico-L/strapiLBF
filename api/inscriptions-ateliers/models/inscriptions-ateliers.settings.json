@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inscriptions_ateliers",
+  "info": {
+    "name": "inscriptionsAteliers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "lesInscrits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ateliers.inscrit"
+    },
+    "atelier": {
+      "via": "inscriptions_ateliers",
+      "model": "atelier"
+    }
+  }
+}

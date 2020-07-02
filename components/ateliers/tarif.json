@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ateliers_tarifs",
+  "info": {
+    "name": "tarif",
+    "icon": "layer-group"
+  },
+  "options": {},
+  "attributes": {
+    "tarif": {
+      "type": "decimal"
+    },
+    "description": {
+      "type": "string"
+    },
+    "qf": {
+      "type": "boolean"
+    }
+  }
+}

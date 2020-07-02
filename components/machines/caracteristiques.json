@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_machines_caracteristiques",
+  "info": {
+    "name": "caracteristiques",
+    "icon": "fish"
+  },
+  "options": {},
+  "attributes": {
+    "valeur": {
+      "type": "string"
+    },
+    "caracteritisque": {
+      "type": "string"
+    }
+  }
+}

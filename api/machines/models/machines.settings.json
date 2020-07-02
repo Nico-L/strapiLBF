@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "name": "machines"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "modele": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "illustration": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "resume": {
+      "type": "richtext"
+    },
+    "Caracteristiques": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.caracteristiques"
+    },
+    "reservations": {
+      "collection": "reservations",
+      "via": "machine"
+    },
+    "Abonnement": {
+      "type": "boolean",
+      "required": true
+    },
+    "Tarifs_horaires": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.abonnements"
+    },
+    "caracteristiques_secondaires": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.caracteristiques"
+    },
+    "tag": {
+      "type": "string"
+    },
+    "couleur": {
+      "type": "enumeration",
+      "enum": [
+        "bleu",
+        "rouge",
+        "orange",
+        "vert",
+        "jaune"
+      ]
+    }
+  }
+}

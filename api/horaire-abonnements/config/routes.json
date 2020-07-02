@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/horaire-abonnements",
+      "handler": "horaire-abonnements.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/horaire-abonnements",
+      "handler": "horaire-abonnements.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/horaire-abonnements",
+      "handler": "horaire-abonnements.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
