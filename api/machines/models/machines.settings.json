@@ -37,18 +37,9 @@
       "repeatable": true,
       "component": "machines.caracteristiques"
     },
-    "reservations": {
-      "collection": "reservations",
-      "via": "machine"
-    },
     "Abonnement": {
       "type": "boolean",
       "required": true
-    },
-    "Tarifs_horaires": {
-      "type": "component",
-      "repeatable": true,
-      "component": "machines.abonnements"
     },
     "caracteristiques_secondaires": {
       "type": "component",
@@ -65,8 +56,15 @@
         "rouge",
         "orange",
         "vert",
-        "jaune"
+        "jaune",
+        "violet"
       ]
+    },
+    "tarifHoraire": {
+      "type": "string"
+    },
+    "urlImage": {
+      "type": "string"
     }
   }
 }

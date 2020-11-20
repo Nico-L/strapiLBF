@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "tarifs_machines_numeriques",
+  "info": {
+    "name": "tarifsMachinesNumeriques"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "machine": {
+      "type": "component",
+      "repeatable": true,
+      "component": "machines.tarif-machine-num"
+    }
+  }
+}

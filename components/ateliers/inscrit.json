@@ -8,6 +8,9 @@
   "attributes": {
     "prenom": {
       "type": "string"
+    },
+    "nom": {
+      "type": "string"
     }
   }
 }

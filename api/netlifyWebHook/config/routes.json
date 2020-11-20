@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/rebuild",
+      "handler": "netlifyWebHook.rebuild"
+    }
+  ]
+}

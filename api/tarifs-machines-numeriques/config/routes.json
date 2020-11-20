@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tarifs-machines-numeriques",
+      "handler": "tarifs-machines-numeriques.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tarifs-machines-numeriques",
+      "handler": "tarifs-machines-numeriques.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tarifs-machines-numeriques",
+      "handler": "tarifs-machines-numeriques.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

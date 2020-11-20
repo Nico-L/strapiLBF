@@ -20,6 +20,20 @@
     "atelier": {
       "via": "inscriptions_ateliers",
       "model": "atelier"
+    },
+    "nom": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "uuid": {
+      "type": "string"
+    },
+    "user": {
+      "via": "inscriptions_ateliers",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

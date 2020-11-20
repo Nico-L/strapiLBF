@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_machines_tarif_machine_nums",
+  "info": {
+    "name": "tarifMachineNum",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "machine": {
+      "type": "string"
+    },
+    "tarifHoraire": {
+      "type": "string"
+    }
+  }
+}

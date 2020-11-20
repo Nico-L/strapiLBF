@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "illustrations",
+  "info": {
+    "name": "illustrations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "illustration": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "espaces": {
+      "collection": "espaces"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "tags": {
+      "collection": "tags"
+    }
+  }
+}

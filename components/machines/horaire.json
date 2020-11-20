@@ -10,7 +10,7 @@
       "type": "time",
       "required": true
     },
-    "Fin": {
+    "fin": {
       "type": "time"
     }
   }

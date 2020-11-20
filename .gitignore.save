@@ -1,0 +1,14 @@
+############################
+# Node.js
+############################
+
+node_modules
+.node_history
+build
+# Strapi
+############################
+
+.env
+exports
+.cache
+build

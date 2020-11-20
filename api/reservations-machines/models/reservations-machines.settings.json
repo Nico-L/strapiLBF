@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reservations_machines",
+  "info": {
+    "name": "reservationsMachines"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "heuredebut": {
+      "type": "string"
+    },
+    "prenom": {
+      "type": "string"
+    },
+    "heurefin": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "machine": {
+      "model": "machines"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "uuid": {
+      "type": "uid"
+    },
+    "dureeReservation": {
+      "type": "float"
+    }
+  }
+}
