@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "illustrations",
   "info": {
-    "name": "illustrations"
+    "name": "illustrations",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "illustration": {
@@ -14,7 +16,6 @@
       "via": "related",
       "allowedTypes": [
         "images",
-        "files",
         "videos"
       ],
       "plugin": "upload",
@@ -29,6 +30,10 @@
     },
     "tags": {
       "collection": "tags"
+    },
+    "article": {
+      "via": "illustrations",
+      "model": "articles"
     }
   }
 }

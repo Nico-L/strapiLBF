@@ -1,4 +1,5 @@
 'use strict';
+const fetch = require('node-fetch');
 
 /**
  * Cron config that gives you an opportunity
@@ -18,4 +19,22 @@ module.exports = {
   // '0 1 * * 1': () => {
   //
   // }
+  '00 05 00 * * *': async () => {
+    const now = new Date();
+    const users = await strapi.plugins['users-permissions'].services.user.fetchAll({doitEtreEfface: true, dateEffacement_lt: now});
+
+    users.forEach(async (user) => {
+      strapi.log.info('user effacé: ', user.username)
+      await strapi.plugins['users-permissions'].services.user.remove({id: user.id})
+    })
+  },
+  '00 00 00 * * *': () => {
+    fetch(process.env.HOOK_ATELIER, {
+        method: 'POST',
+        headers: {},
+        body: ''
+      }).then((retour)=> {
+		strapi.log.info('Netlify build launched');
+      })
+  }
 };
