@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "ateliers",
   "info": {
-    "name": "ateliers"
+    "name": "ateliers",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "titre": {
@@ -49,6 +51,9 @@
     },
     "urlImage": {
       "type": "string"
+    },
+    "encadrant": {
+      "type": "email"
     }
   }
 }

@@ -1,4 +1,4 @@
-const urlMetadata = require('url-metadata')
+const fetchMetaData = require('meta-fetcher');
 
 module.exports = {
 	getMetadata: async function(ctx) {
@@ -12,14 +12,15 @@ module.exports = {
 		
 		try {
      			 // decrypt the jwt
-      			const obj = urlMetadata(url)
+			const lesMeta = await fetchMetaData(url)
 			var retour = {
-				succes: 1,
+				success: 1,
 				meta: {
-					"title": obj.title,
-					"description": obj.description,
+					"title": lesMeta.basic_metadata.title,
+					"description": lesMeta.basic_metadata.description,
+					"favicons": lesMeta.favicons,
 					"image" : {
-						"url" : obj.image
+						"url" : lesMeta.opengraph["og:image"]
 					}
 				}
 			}
