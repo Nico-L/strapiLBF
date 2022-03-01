@@ -15,7 +15,7 @@
     "knex": "<0.20.0",
     "meta-fetcher": "^2.0.0",
     "pg": "latest",
-    "strapi": "3.3.3",
+    "strapi": "3.6.8",
     "strapi-admin": "3.3.3",
     "strapi-connector-bookshelf": "3.3.3",
     "strapi-plugin-content-manager": "3.3.3",
